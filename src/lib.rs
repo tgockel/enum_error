@@ -1,16 +1,18 @@
 //! Provides macros to generate `std::error::Error` and `std::fmt::Display` implementations for
 //! simple enumeration types.
 //!
+//! # Usage
+//!
 //! In `Cargo.toml`:
 //!
-//! ```
+//! ```toml
 //! [dependencies]
 //! enum_error = { git = "https://github.com/tgockel/enum_error" }
 //! ```
 //!
 //! In your project:
 //!
-//! ```
+//! ```text
 //! #[macro_use]
 //! extern crate enum_error;
 //!
