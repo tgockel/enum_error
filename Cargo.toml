@@ -1,0 +1,18 @@
+[package]
+name = "enum_error"
+description = "Macro to generate an std::error::Error from an enum."
+version = "0.1.0"
+authors = ["Travis Gockel <travis@gockelhut.com>"]
+homepage = "http://tgockel.github.io/enum_error"
+repository = "https://github.com/tgockel/enum_error"
+readme = "README.md"
+keywords = ["enum", "proc-macros"]
+categories = ["development-tools"]
+license = "Apache-2.0"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "~0.3.15"
+syn = "~0.11.11"
