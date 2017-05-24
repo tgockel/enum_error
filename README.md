@@ -3,6 +3,8 @@ enum_error
 
 Provides macros to generate `std::error::Error` and `std::fmt::Display` implementations for simple enumeration types.
 
+[![Build Status](https://travis-ci.org/tgockel/enum_error.svg?branch=master)](https://travis-ci.org/tgockel/enum_error)
+
 Usage
 -----
 
