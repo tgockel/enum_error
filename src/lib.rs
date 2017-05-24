@@ -1,3 +1,28 @@
+//! Provides macros to generate `std::error::Error` and `std::fmt::Display` implementations for
+//! simple enumeration types.
+//!
+//! In `Cargo.toml`:
+//!
+//! ```
+//! [dependencies]
+//! enum_error = { git = "https://github.com/tgockel/enum_error" }
+//! ```
+//!
+//! In your project:
+//!
+//! ```
+//! #[macro_use]
+//! extern crate enum_error;
+//!
+//! #[derive(Debug, EnumDisplay, EnumError)]
+//! enum BasicError {
+//!     A,
+//!     B,
+//!     C,
+//! }
+//! ```
+//!
+//! Now, you can happily use `BasicError` values wherever `std::error::Error` is appropriate.
 #![crate_type="proc-macro"]
 
 extern crate syn;
