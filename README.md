@@ -11,7 +11,7 @@ Usage
 In `Cargo.toml`:
 
     [dependencies]
-    enum_string = { git = "https://github.com/tgockel/enum_error" }
+    enum_error = { git = "https://github.com/tgockel/enum_error" }
 
 In your project:
 
